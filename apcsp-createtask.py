@@ -8,10 +8,10 @@ numbers = [4, 5, 6, 9, 10, 12, 13, 14, 18, 20, 23, 45]
 def getUnitsDigit(num):
     return math.floor(num % 10)
 
-def askQuestion(usedOps):
+def askQuestion(usedNumbers, usedOps):
     print(" ") # spacing/looks purposes
-    randomNum1 = random.choice(numbers)
-    randomNum2 = random.choice(numbers)
+    randomNum1 = random.choice(usedNumbers)
+    randomNum2 = random.choice(usedNumbers)
     num1 = max([randomNum1, randomNum2])
     num2 = min([randomNum1, randomNum2])
     # i want num1 to be greater than or equal to num2, for simplicity
@@ -43,11 +43,11 @@ def askQuestion(usedOps):
         else: 
             return False
 
-def game(questions, usedOps):
+def game(questions, usedNumbers, usedOps):
     questionsCorrect = 0
     print("For the following questions, respond with the units digit of the result.")
     for i in range(questions):
-        if(askQuestion(usedOps) == True):
+        if(askQuestion(usedNumbers, usedOps) == True):
             questionsCorrect += 1
             print("You got that correct!")
         else: 
@@ -63,4 +63,4 @@ for op in operations:
     if use == "y":
         usedOperations.append(op)
  
-game(questionCount, usedOperations)
+game(questionCount, numbers, usedOperations)
