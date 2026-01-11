@@ -18,26 +18,26 @@ def askQuestion(usedNumbers, usedOps):
     
     operation = random.choice(usedOps)
     if operation == 'addition':
-        response = int(input(f"What is the units digit of {num1} + {num2}? - "))
+        response = int(input(f"What is the unit digit of {num1} + {num2}? - "))
         if response == getUnitsDigit(num1+num2):
             return True
         else: 
             return False
         
     elif operation == 'subtraction':
-        response = int(input(f"What is the units digit of {num1} - {num2}? - "))
+        response = int(input(f"What is the unit digit of {num1} - {num2}? - "))
         if response == getUnitsDigit(num1-num2):
             return True
         else: 
             return False
     elif operation == 'multiplication':
-        response = int(input(f"What is the units digit of {num1} x {num2}? - "))
+        response = int(input(f"What is the unit digit of {num1} x {num2}? - "))
         if response == getUnitsDigit(num1*num2):
             return True
         else: 
             return False
     else:
-        response = int(input(f"What is the units digit of {num1} / {num2}? - "))
+        response = int(input(f"What is the unit digit of {num1} / {num2}? - "))
         if response == getUnitsDigit(num1/num2):
             return True
         else: 
