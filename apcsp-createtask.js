@@ -1,4 +1,7 @@
 /* 
+
+THE PROGRAM CODE IS THE PYTHON FILE (because its too many parts to code this in js as opposed to the python modules)
+
 input (probably from user);
 use of at least one list
 at least one procedure
@@ -38,7 +41,7 @@ function askQuestion() {
     // if we get subtraction, i do not want a negative number, ensures that num1 > num2
 
     if(operations[randomInt(0, 3)] === 0) {
-        
+
     } else if(operations[randomInt(0, 3)] === 1) {
 
     } else if(operations[randomInt(0, 3)] === 2) {
