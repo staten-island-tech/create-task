@@ -54,7 +54,7 @@ def game(questions, usedNumbers, usedOps):
     print(" ") # spacing/looks purposes
     print(f"You got {questionsCorrect} questions correct!")
     print(f"That's a score of {round((questionsCorrect/questions)* 100)}%!") 
-   
+
 questionCount = int(input("How many questions do you want to be asked? - "))
 for op in operations:
     use = input(f"{op}: Would you like to use this operation? (respond using Y/N) - ").lower()
