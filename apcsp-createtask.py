@@ -16,14 +16,12 @@ def askQuestion(usedNumbers, usedOps):
     num1 = max([randomNum1, randomNum2])
     num2 = min([randomNum1, randomNum2])
     # i want num1 to be greater than or equal to num2, for simplicity
-
     if operation == 'addition':
         response = int(input(f"What is the unit digit of {num1} + {num2}? - "))
         if response == getUnitsDigit(num1+num2):
             return True
         else: 
-            return False
-        
+            return False     
     elif operation == 'subtraction':
         response = int(input(f"What is the unit digit of {num1} - {num2}? - "))
         if response == getUnitsDigit(num1-num2):
